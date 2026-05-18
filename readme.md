@@ -1,6 +1,6 @@
-# Dr_J0nes Jackhammer
+# Dr_J0nes JackHammer
 
-DRJNS_Jackhammer (Dr_J0nes Jackhammer) is a low-level runtime patching and debugging tool based on Windows Debug APIs.
+DRJNS_Jackhammer (Dr_J0nes JackHammer) is a low-level runtime patching and debugging tool based on Windows Debug APIs.
 
 It allows injection of custom x86-64 instructions at runtime using pattern-based breakpoint interception.
 
@@ -44,6 +44,26 @@ Before setting the breakpoint, the tool verifies that the bytes currently presen
 When the breakpoint is hit at runtime, the original byte is temporarily restored and the thread is single-stepped. During this single-step phase, the patch bytes are written to the target address and executed.
 
 After execution, the original bytes are fully restored and all breakpoints are reinserted, leaving the original code intact outside of the execution window.
+
+## My Mods
+
+### SnowRunner
+
+*   **[WheelBarrow](https://github.com/DoktorJ0nes/DRJNS_WheelBarrow):** Map-wide persistence for the game SnowRunner.
+
+*   **ChainSaw:** *[UNRELEASED]* Makes all trees and stumps destructable in the game SnowRunner.
+
+*   **FuelPump:** *[UNRELEASED]* Changes the fuel consumption of all your trucks by a multiplier of your choice in the game SnowRunner.
+
+### RoadCraft
+
+*   **[JackHammer](https://github.com/DoktorJ0nes/DRJNS_JackHammer):** Map-wide persistence for the game RoadCraft.
+
+*   **JerryCan:** *[UNRELEASED]* Changes the fuel consumption of all your trucks by a multiplier of your choice in the game RoadCraft.
+
+### DayZ
+
+*   **[Trader](https://steamcommunity.com/workshop/filedetails/?id=1590841260):** Brings AI Trader, Tradercitys and Safezones to the game DayZ.
 
 ## Third-Party Libraries
 This project uses nlohmann/json (MIT License).
